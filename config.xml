@@ -1,13 +1,20 @@
-<widget id="net.projectace.dropme" version="0.0.1">
-        <name>DropME</name>
-        <description>
-            A sample Apache Cordova application that responds to the deviceready event.
-        </description>
-        <author email="alexander.db27@gmail.com" href="http://projectace.net">
-            Apache Cordova Team
-        </author>
-        <content src="index.html" />
-        <access origin="*" />
-        <preference name="Fullscreen" value="true" />
-        <preference name="WebViewBounce" value="true" />
-    </widget>
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "net.projectace.dropme"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>DropME</name>
+
+    <description>
+        An example for phonegap build docs. 
+    </description>
+
+    <author href="#" email="alexander.db27@gmail.com">
+        Hardeep Shoker 
+    </author>
+
+</widget>
