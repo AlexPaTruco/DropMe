@@ -21,7 +21,18 @@
             {
               
             }, function(result) {
-            $("#noti").html(result);
+
+              if(result === "True")
+              {
+                window.location = "drop.html";
+              }else if(result === "Email")
+              {
+                $("#noti").html("Email not found!");
+              }else
+              {
+                $("#noti").html("Wrong Password!");
+              }
+            
     });
  }
   </script>
