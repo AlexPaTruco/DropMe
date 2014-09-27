@@ -48,7 +48,7 @@ function uploadFile(mediaFile) {
                         url: 'http://dropme.projectace.net/upload.php', // Servlet URL           
                         data: {
 							userid: "1",
-                            description: "hello",
+                            description: "hell",
                             longitude: "1.0",
 							latitude: "1.0"
 							},
