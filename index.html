@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
-<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+<html class="no-js" lang="en">
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,27 +11,46 @@
 	<link rel="stylesheet" href="Foundation5/css/foundation.css"/>
 	<link rel="stylesheet" href="DropME.css"/>
 	<script src="Foundation5/js/vendor/modernizr.js"></script>
+    <script>
+
+  function lgin()
+  {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+   $.get("http://projectace.net/api/2ee9048e1d17e662e646aa5ed1376142ea60b847/2a6497ddc46141a285d6653d437ba955a1a0a8e1/login/?email="+email+"&password="+password,
+            {
+              
+            }, function(result) {
+            $("#noti").html(result);
+    });
+ }
+  </script>
 </head>
 
 <body>
 	<nav class="tab-bar nav-bar">
 		
 	</nav>
-	<form>
   		<div class="row">
-  			<div class="large-2 columns"></div>
-    		<div class="large-8 columns">
+  			<div class="large-2 columns"> </div>
+    		<div class="large-8 large-centered columns">
+          <div id="noti"></div>
       			<label>Login
-        			<input type="text" placeholder="username" />
+        			<input id="email" type="text" placeholder="username"/>
       			</label>
       			<label>Password
-        			<input type="password" placeholder="password" />
+        			<input id="password" type="password" placeholder="password" />
       			</label>
-      			<a href="#" class="button">login!</a>
+      			<a class="button" href="#" onclick="lgin('nose')">Login!</a>
     		</div>
-    		<div class="large-2 columns"></div>
+    		<div class="large-2 columns"> </div>
   		</div>
-  	</form>
+    <script src="Foundation5/js/vendor/jquery.js"></script>
+  <script src="Foundation5/js/foundation.min.js"></script>
+
+  <script>
+      $(document).foundation();
+    </script>
 </body>
 
 </html>
