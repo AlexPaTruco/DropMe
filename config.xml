@@ -3,13 +3,13 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "net.projectace.dropme"
+        id        = "com.tokenspot.dropme"
         version   = "1.0.0">
 
     <name>DropME</name>
 
     <description>
-        DropME
+        DropIT
     </description>
 
     <author href="http://wwww.tokenspot.com" email="alexander.db27@gmail.com">
