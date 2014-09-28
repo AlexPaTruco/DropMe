@@ -34,23 +34,23 @@ function uploadFile(mediaFile) {
     options.fileKey = "file";
     options.fileName = name;
     
-    var email = getParameterByName("email");
+    //var email = getParameterByName("email");
 
     ft.upload(path,
             "http://dropme.projectace.net/upload.php",
             function(result) {
-                if (isNaN(result.response)) {
-                    alert(result.response);
-                } else {
+                //if (isNaN(result.response)) {
+                    //alert(result.response);
+                //} else {
                     alert("Success!");
                     $.ajax({
                         type: 'POST',
                         url: 'http://dropme.projectace.net/upload.php', // Servlet URL           
                         data: {
-							userid: 1,
+							userid: "1",
                             description: "hell",
-                            longitude: 1.0,
-							latitude: 1.0
+                            longitude: "1.0",
+							latitude: "1.0"
 							},
                         success: function(data) {
                         },
@@ -58,7 +58,7 @@ function uploadFile(mediaFile) {
                             alert('server error occurred');
                         }
                     });
-                }
+                //}
                 alert('Upload success: ' + result.responseCode);
                 alert(result.bytesSent + ' bytes sent');
 
